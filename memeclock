@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -Ceu
+
+st -f "Inconsolata-16" -g "80x8" \
+   watch -n10 -t -c \
+   'function meme () { echo-sd $(echo-meme $(printf "\e[36m%s\e[m" $(date "+%-m/%-d(%a)_%-H:%M"))); }; meme'
